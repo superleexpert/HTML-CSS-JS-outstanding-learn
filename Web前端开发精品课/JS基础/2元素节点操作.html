@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点练习</title>
+    <script>
+        window.onload = function () {
+            var addBtn = document.getElementById("btn1");
+            var aList = document.getElementById("list1");
+
+            addBtn.onclick = function () {
+                var aTxt = document.getElementById("txt1");
+
+                var txtNode = document.createTextNode(aTxt.value);
+                var aLi = document.createElement("li");
+                aLi.appendChild(txtNode);
+                aList.insertBefore(aLi, aList.firstElementChild);
+            }
+
+            var removeBtn = document.getElementById("btn2");
+            removeBtn.onclick = function () {
+                aList.removeChild(aList.firstElementChild);
+            }
+        }
+    </script>
+</head>
+<body>
+<ul id="list1">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+<input id="txt1" type="text" title="">
+<input id="btn1" type="button" value="提交">
+<input id="btn2" type="button" value="删除">
+</body>
+</html>

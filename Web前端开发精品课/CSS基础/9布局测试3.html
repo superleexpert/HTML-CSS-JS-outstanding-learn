@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位的横向两列布局</title>
+    <style type="text/css" media="screen">
+        body {
+            position: relative;
+            width: 100%;
+            background-color: cadetblue;
+        }
+
+        article {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 800px;
+            background-color: blue;
+        }
+        aside {
+            position: absolute;
+            top: 0;
+            right:800px;
+            left: 0;
+            background-color: darkgreen;
+        }
+    </style>
+
+</head>
+<body>
+<article>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error obcaecati sint minima totam fuga, tempora, id quia soluta officia iure eligendi sequi non dicta, doloribus accusamus odit fugiat quam quibusdam.</p>
+</article>
+<aside>
+    <h3>Aside Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, doloremque.</p>
+</aside>
+</body>
+</html>

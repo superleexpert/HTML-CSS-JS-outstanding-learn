@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+    <style type="text/css">
+        .left {
+            margin-left:-100%;
+        } /*把左边的盒子拉上去*/
+        .right {
+            margin-left：-100px;
+        } /*把右边的盒子拉上去*/
+    </style>
+</head>
+<body>
+<!-- 圣杯的 HTML 结构 -->
+<div class="container">
+    <!-- 中间的 div 必须写在最前面 -->
+    <div class="middle">中间弹性区</div>
+    <div class="left">左边栏</div>
+    <div class="right">右边栏</div>
+</div>
+</body>
+</html>

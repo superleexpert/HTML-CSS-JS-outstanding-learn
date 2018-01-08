@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <style type="text/css">
+        #box1{
+            border: 1px solid black;
+            /*height: 600px;*/
+            width: 800px;
+        }
+        #box2{
+            height: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+        }
+        #box3{
+            height: 400px;
+            margin: 10px;
+            /*float: left;*/
+            /*margin-left: 10px;*/
+            /*margin-bottom: 10px;*/
+        }
+        #box4{
+            height: 100px;
+            background-color: brown;
+            margin: 10px;
+        }
+        #left{
+            width: 595px;
+            height: 400px;
+            background-color: red;
+            margin-right: 10px;
+            float: left;
+        }
+        #right{
+            background-color: blue;
+            margin: 0;
+            height: 400px;
+            width: 175px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <div id="box2"></div>
+    <div id="box3">
+        <div id="left"></div>
+        <div id="right"></div>
+        <!--<div class="clear"></div>-->
+    </div>
+    <div id="box4"></div>
+</div>
+</body>
+</html>
